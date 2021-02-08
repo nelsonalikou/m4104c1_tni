@@ -1,0 +1,39 @@
+<!DOCTYPE qTniML>
+<workspace version="2" subversion="1">
+ <modules>
+  <module>
+   <identification winid="20" name="Gray Image Displayer" library="IO/release/display_gray_image"/>
+   <position x="-75" y="-461"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="19" name="Gray Image Displayer" library="IO/release/display_gray_image"/>
+   <position x="-458" y="-310"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="18" name="Gray Image Loader" library="IO/release/load_gray_image"/>
+   <position x="-661" y="-501"/>
+   <parameters>
+    <parameter paramid="0" value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png"/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="17" name="DynamiqueExpon" library="tp2/Exponentiel/release/DynamiqueExpon"/>
+   <position x="-314" y="-501"/>
+   <parameters>
+    <parameter paramid="0" value="1"/>
+    <parameter paramid="1" value="1"/>
+   </parameters>
+  </module>
+ </modules>
+ <links>
+  <link to_node="0" from="20" to="17" from_node="0"/>
+  <link to_node="0" from="19" to="18" from_node="0"/>
+  <link to_node="0" from="17" to="18" from_node="0"/>
+ </links>
+</workspace>

@@ -1,38 +1,38 @@
 <!DOCTYPE qTniML>
-<workspace version="2" subversion="1">
+<workspace subversion="1" version="2">
  <modules>
   <module>
-   <identification name="Gray Image Displayer" winid="9" library="IO/release/display_gray_image"/>
-   <position x="-196" y="-456"/>
-   <parameters>
-    <parameter paramid="0" value=""/>
-   </parameters>
-  </module>
-  <module>
-   <identification name="Gray Image Loader" winid="8" library="IO/release/load_gray_image"/>
-   <position x="-661" y="-501"/>
-   <parameters>
-    <parameter paramid="0" value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png"/>
-   </parameters>
-  </module>
-  <module>
-   <identification name="ReduireDynamique" winid="7" library="tp2/Dynamique/release/ReduireDynamique"/>
-   <position x="-400" y="-627"/>
+   <identification name="ReduireDynamique" winid="3" library="tp2/Dynamique/release/ReduireDynamique"/>
+   <position y="-627" x="-400"/>
    <parameters>
     <parameter paramid="0" value="1"/>
    </parameters>
   </module>
   <module>
-   <identification name="Gray Image Displayer" winid="6" library="IO/release/display_gray_image"/>
-   <position x="-458" y="-310"/>
+   <identification name="Gray Image Displayer" winid="4" library="IO/release/display_gray_image"/>
+   <position y="-310" x="-458"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Loader" winid="2" library="IO/release/load_gray_image"/>
+   <position y="-501" x="-661"/>
+   <parameters>
+    <parameter paramid="0" value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Displayer" winid="1" library="IO/release/display_gray_image"/>
+   <position y="-456" x="-196"/>
    <parameters>
     <parameter paramid="0" value=""/>
    </parameters>
   </module>
  </modules>
  <links>
-  <link from_node="0" from="9" to="7" to_node="0"/>
-  <link from_node="0" from="7" to="8" to_node="0"/>
-  <link from_node="0" from="6" to="8" to_node="0"/>
+  <link to="2" from_node="0" from="3" to_node="0"/>
+  <link to="2" from_node="0" from="4" to_node="0"/>
+  <link to="3" from_node="0" from="1" to_node="0"/>
  </links>
 </workspace>

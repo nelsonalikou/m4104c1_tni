@@ -1,0 +1,40 @@
+<!DOCTYPE qTniML>
+<workspace version="2" subversion="1">
+ <modules>
+  <module>
+   <identification winid="5" library="tp2/Lineaire/release/DynamiqueLineaire" name="DynamiqueLineaire"/>
+   <position y="-619" x="-410"/>
+   <parameters>
+    <parameter value="0" paramid="0"/>
+    <parameter value="155" paramid="1"/>
+    <parameter value="1" paramid="2"/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="4" library="IO/release/display_gray_image" name="Gray Image Displayer"/>
+   <position y="-446" x="-194"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="3" library="IO/release/load_gray_image" name="Gray Image Loader"/>
+   <position y="-501" x="-661"/>
+   <parameters>
+    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="2" library="IO/release/display_gray_image" name="Gray Image Displayer"/>
+   <position y="-320" x="-500"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+ </modules>
+ <links>
+  <link to_node="0" to="3" from_node="0" from="5"/>
+  <link to_node="0" to="5" from_node="0" from="4"/>
+  <link to_node="0" to="3" from_node="0" from="2"/>
+ </links>
+</workspace>
