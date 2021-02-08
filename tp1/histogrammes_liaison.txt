@@ -1,0 +1,10 @@
+Noms : ALIKOU DONGMO
+Prenom : Nelson
+Demi-goupe : INFS4_1B
+
+
+Liaison des images avec l'histogramme correspondant
+img1 => Histogramme 4
+img2 => Histogramme 3
+img3 => Histogramme 1
+img4 => Histogramme 2

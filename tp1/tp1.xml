@@ -1,0 +1,179 @@
+<!DOCTYPE qTniML>
+<workspace version="2" subversion="1">
+ <modules>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="25"/>
+   <position y="744.366" x="-378.444"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="HistoCumul" library="tp1/release/HistoCumul" winid="24"/>
+   <position y="768.366" x="-657.77"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="HistoCumul" library="tp1/release/HistoCumul" winid="23"/>
+   <position y="317.131" x="-660.699"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="22"/>
+   <position y="293.131" x="-381.373"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="20"/>
+   <position y="-867.915" x="-485.527"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="HistoCumul" library="tp1/release/HistoCumul" winid="19"/>
+   <position y="-823" x="-768"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="18"/>
+   <position y="-218.915" x="-446.527"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="HistoCumul" library="tp1/release/HistoCumul" winid="17"/>
+   <position y="-194.915" x="-673.527"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Gray Image Loader" library="IO/release/load_gray_image" winid="16"/>
+   <position y="-690" x="-922"/>
+   <parameters>
+    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/img1.png" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Displayer" library="IO/release/display_gray_image" winid="15"/>
+   <position y="-690" x="-447"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Histogramme des niveaux de gris" library="Operators/release/gray_histogram" winid="14"/>
+   <position y="-581" x="-821"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="13"/>
+   <position y="-606" x="-416"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Displayer" library="IO/release/display_gray_image" winid="12"/>
+   <position y="-109.915" x="-473.527"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Histogramme des niveaux de gris" library="Operators/release/gray_histogram" winid="11"/>
+   <position y="39.0854" x="-800.527"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="10"/>
+   <position y="14.0854" x="-412.527"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Displayer" library="IO/release/display_gray_image" winid="9"/>
+   <position y="434.455" x="-347.201"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Displayer" library="IO/release/display_gray_image" winid="8"/>
+   <position y="921.325" x="-188.532"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Histogramme des niveaux de gris" library="Operators/release/gray_histogram" winid="7"/>
+   <position y="588.313" x="-709.935"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="6"/>
+   <position y="561.443" x="-284.256"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Histogramme des niveaux de gris" library="Operators/release/gray_histogram" winid="5"/>
+   <position y="1098.87" x="-746.889"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="4"/>
+   <position y="1072" x="-183.203"/>
+   <parameters>
+    <parameter value="" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Loader" library="IO/release/load_gray_image" winid="3"/>
+   <position y="-104.652" x="-851.357"/>
+   <parameters>
+    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/img2.png" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Loader" library="IO/release/load_gray_image" winid="2"/>
+   <position y="446.892" x="-830.143"/>
+   <parameters>
+    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/img3.png" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Loader" library="IO/release/load_gray_image" winid="1"/>
+   <position y="919.266" x="-854.954"/>
+   <parameters>
+    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/img4.png" paramid="0"/>
+   </parameters>
+  </module>
+ </modules>
+ <links>
+  <link from_node="0" to="24" from="25" to_node="0"/>
+  <link from_node="0" to="1" from="24" to_node="0"/>
+  <link from_node="0" to="2" from="23" to_node="0"/>
+  <link from_node="0" to="23" from="22" to_node="0"/>
+  <link from_node="0" to="19" from="20" to_node="0"/>
+  <link from_node="0" to="16" from="19" to_node="0"/>
+  <link from_node="0" to="17" from="18" to_node="0"/>
+  <link from_node="0" to="3" from="17" to_node="0"/>
+  <link from_node="0" to="16" from="15" to_node="0"/>
+  <link from_node="0" to="16" from="14" to_node="0"/>
+  <link from_node="0" to="14" from="13" to_node="0"/>
+  <link from_node="0" to="3" from="12" to_node="0"/>
+  <link from_node="0" to="3" from="11" to_node="0"/>
+  <link from_node="0" to="11" from="10" to_node="0"/>
+  <link from_node="0" to="2" from="9" to_node="0"/>
+  <link from_node="0" to="1" from="8" to_node="0"/>
+  <link from_node="0" to="2" from="7" to_node="0"/>
+  <link from_node="0" to="7" from="6" to_node="0"/>
+  <link from_node="0" to="1" from="5" to_node="0"/>
+  <link from_node="0" to="5" from="4" to_node="0"/>
+ </links>
+</workspace>

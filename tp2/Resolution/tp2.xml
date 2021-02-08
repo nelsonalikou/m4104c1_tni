@@ -1,0 +1,31 @@
+<!DOCTYPE qTniML>
+<workspace subversion="1" version="2">
+ <modules>
+  <module>
+   <identification library="IO/release/display_gray_image" winid="6" name="Gray Image Displayer"/>
+   <position y="-456" x="-196"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification library="tp2/Resolution/release/DivResolution" winid="5" name="DivResolution"/>
+   <position y="-581" x="-443"/>
+   <parameters>
+    <parameter paramid="0" value="2"/>
+    <parameter paramid="1" value="2"/>
+   </parameters>
+  </module>
+  <module>
+   <identification library="IO/release/load_gray_image" winid="4" name="Gray Image Loader"/>
+   <position y="-501" x="-661"/>
+   <parameters>
+    <parameter paramid="0" value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png"/>
+   </parameters>
+  </module>
+ </modules>
+ <links>
+  <link from_node="0" to="5" from="6" to_node="0"/>
+  <link from_node="0" to="4" from="5" to_node="0"/>
+ </links>
+</workspace>

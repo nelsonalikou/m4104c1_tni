@@ -1,0 +1,32 @@
+#include "HistoCumul.hpp"
+
+using namespace ns_wtni;
+
+HistoCumul::HistoCumul( pluglink *p ) : plugin(p)
+{
+// Ajout des donnees en entree
+	add_input( input, "Image noir et blanc en entrée" );
+
+// Ajout des donnees en sortie
+	add_output( histo, "Histogramme cummulé" );
+// Ajout des parametres
+}
+
+bool HistoCumul::execute( std::string &msg)
+{
+
+	// Tester les entrees - A COMPLETER si NECESSAIRE !
+	if ( ! input )
+	{
+		 msg = "L'entree n°1 n'est pas initialisee.";
+		return false;
+	}
+
+	// ALLOUER les sorties ! TODO
+	// Ecrire le code du plugin : TODO !!
+
+	return true; 
+}
+
+CREATE_PLUGIN( HistoCumul );
+
