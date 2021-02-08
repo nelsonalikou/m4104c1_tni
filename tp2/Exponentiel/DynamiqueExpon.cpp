@@ -95,11 +95,13 @@ bool DynamiqueExpon::execute( std::string &msg)
     for (unsigned int colonne = 0; colonne < input->width(); colonne++) {
             for (unsigned int ligne = 0; ligne < input->height(); ligne++) {
                int pixel = out[ligne][colonne];
-                if(raise){
+               //condition de lancement pour la fonction logarithmique
+               if(raise){
                     //std::cout << pixel << "  " << raise << "  " << round(pow(((double)pixel/(double)255), (double)n) * 255) << std::endl;
                    //pow prend en paramètre des doubles et non des int d'où la necessité de cast avant de reconvertir vers un int
                    out[ligne][colonne] = (int) round(pow(((double)pixel/(double)255), (double)n) * 255);
                 }else{
+                   //lancement fonction exponentielle
                    //std::cout << pixel << "  " << raise << "  " << pow((pixel/255), 1/n) * 255 << std::endl;
                    out[ligne][colonne] = (int) round(pow(((double)pixel/(double)255), 1/n) * 255);
                 }

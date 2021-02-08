@@ -2,12 +2,21 @@
 <workspace version="2" subversion="1">
  <modules>
   <module>
-   <identification winid="24" name="DynamiqueExpon" library="tp2/Exponentiel/release/DynamiqueExpon"/>
-   <position x="-314" y="-501"/>
+   <identification winid="28" name="Signal 32 bits displayer" library="IO/release/display_long_signal"/>
+   <position x="47" y="-669"/>
    <parameters>
-    <parameter paramid="0" value="5"/>
-    <parameter paramid="1" value="1"/>
+    <parameter paramid="0" value=""/>
    </parameters>
+  </module>
+  <module>
+   <identification winid="26" name="HistoCumul" library="tp1/release/HistoCumul"/>
+   <position x="-369" y="-706"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification winid="25" name="EgaliseHisto" library="tp3/EgaliseHisto/release/EgaliseHisto"/>
+   <position x="-320" y="-476"/>
+   <parameters/>
   </module>
   <module>
    <identification winid="23" name="Gray Image Loader" library="IO/release/load_gray_image"/>
@@ -25,15 +34,17 @@
   </module>
   <module>
    <identification winid="21" name="Gray Image Displayer" library="IO/release/display_gray_image"/>
-   <position x="-75" y="-461"/>
+   <position x="70" y="-472"/>
    <parameters>
     <parameter paramid="0" value=""/>
    </parameters>
   </module>
  </modules>
  <links>
-  <link to_node="0" from="24" to="23" from_node="0"/>
+  <link to_node="0" from="28" to="26" from_node="0"/>
+  <link to_node="0" from="26" to="23" from_node="0"/>
+  <link to_node="0" from="25" to="23" from_node="0"/>
   <link to_node="0" from="22" to="23" from_node="0"/>
-  <link to_node="0" from="21" to="24" from_node="0"/>
+  <link to_node="0" from="21" to="25" from_node="0"/>
  </links>
 </workspace>
