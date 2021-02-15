@@ -44,12 +44,11 @@ bool EgaliseHisto::execute( std::string &msg)
         (*histo)[i] = (*histo)[i-1] + (*histo)[i];
     }
 
-
     //parcours de notre image
     for (unsigned int colonne = 0; colonne < input->width(); colonne++) {
         for (unsigned int ligne = 0; ligne < input->height(); ligne++) {
            int value = proxy[ligne][colonne];
-           out[ligne][colonne] = (int) round(double(255) * (double)value / double(proxy[255][255]) ) ;
+           out[ligne][colonne] = (int) round(double(255) * (double)(*histo)[value] / double((*histo)[255]) ) ;
         }
     }
 	return true; 
