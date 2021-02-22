@@ -2,63 +2,63 @@
 <workspace subversion="1" version="2">
  <modules>
   <module>
-   <identification winid="16" name="Signal 32 bits displayer" library="IO/release/display_long_signal"/>
-   <position x="59" y="-700"/>
+   <identification winid="24" name="Gray Image Displayer" library="IO/release/display_gray_image"/>
+   <position x="51" y="-503"/>
    <parameters>
-    <parameter value="histo cumul" paramid="0"/>
+    <parameter value="image egalisee" paramid="0"/>
    </parameters>
   </module>
   <module>
-   <identification winid="15" name="HistoCumul" library="tp1/release/HistoCumul"/>
-   <position x="-369" y="-706"/>
-   <parameters/>
-  </module>
-  <module>
-   <identification winid="14" name="EgaliseHisto" library="tp3/EgaliseHisto/release/EgaliseHisto"/>
-   <position x="-320" y="-476"/>
-   <parameters/>
-  </module>
-  <module>
-   <identification winid="13" name="Gray Image Loader" library="IO/release/load_gray_image"/>
-   <position x="-661" y="-501"/>
-   <parameters>
-    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png" paramid="0"/>
-   </parameters>
-  </module>
-  <module>
-   <identification winid="12" name="Gray Image Displayer" library="IO/release/display_gray_image"/>
-   <position x="-494" y="-288"/>
-   <parameters>
-    <parameter value="image de base" paramid="0"/>
-   </parameters>
-  </module>
-  <module>
-   <identification winid="11" name="HistoCumul" library="tp1/release/HistoCumul"/>
-   <position x="-146" y="-283"/>
-   <parameters/>
-  </module>
-  <module>
-   <identification winid="10" name="Signal 32 bits displayer" library="IO/release/display_long_signal"/>
+   <identification winid="23" name="Signal 32 bits displayer" library="IO/release/display_long_signal"/>
    <position x="315" y="-304"/>
    <parameters>
     <parameter value="histo cumul" paramid="0"/>
    </parameters>
   </module>
   <module>
-   <identification winid="9" name="Gray Image Displayer" library="IO/release/display_gray_image"/>
-   <position x="51" y="-503"/>
+   <identification winid="22" name="HistoCumul" library="tp1/release/HistoCumul"/>
+   <position x="-146" y="-283"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification winid="21" name="Gray Image Displayer" library="IO/release/display_gray_image"/>
+   <position x="-494" y="-288"/>
    <parameters>
-    <parameter value="image egalisee" paramid="0"/>
+    <parameter value="image de base" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="20" name="Gray Image Loader" library="IO/release/load_gray_image"/>
+   <position x="-661" y="-501"/>
+   <parameters>
+    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification winid="19" name="EgaliseHisto" library="tp3/EgaliseHisto/release/EgaliseHisto"/>
+   <position x="-320" y="-476"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification winid="18" name="HistoCumul" library="tp1/release/HistoCumul"/>
+   <position x="-369" y="-706"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification winid="17" name="Signal 32 bits displayer" library="IO/release/display_long_signal"/>
+   <position x="59" y="-700"/>
+   <parameters>
+    <parameter value="histo cumul" paramid="0"/>
    </parameters>
   </module>
  </modules>
  <links>
-  <link to="15" from="16" to_node="0" from_node="0"/>
-  <link to="13" from="15" to_node="0" from_node="0"/>
-  <link to="13" from="14" to_node="0" from_node="0"/>
-  <link to="13" from="12" to_node="0" from_node="0"/>
-  <link to="14" from="11" to_node="0" from_node="0"/>
-  <link to="11" from="10" to_node="0" from_node="0"/>
-  <link to="14" from="9" to_node="0" from_node="0"/>
+  <link to="19" from="24" to_node="0" from_node="0"/>
+  <link to="22" from="23" to_node="0" from_node="0"/>
+  <link to="19" from="22" to_node="0" from_node="0"/>
+  <link to="20" from="21" to_node="0" from_node="0"/>
+  <link to="20" from="19" to_node="0" from_node="0"/>
+  <link to="20" from="18" to_node="0" from_node="0"/>
+  <link to="18" from="17" to_node="0" from_node="0"/>
  </links>
 </workspace>

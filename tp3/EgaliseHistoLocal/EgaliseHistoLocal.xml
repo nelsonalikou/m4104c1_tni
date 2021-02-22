@@ -1,0 +1,52 @@
+<!DOCTYPE qTniML>
+<workspace version="2" subversion="1">
+ <modules>
+  <module>
+   <identification name="Gray Image Loader" library="IO/release/load_gray_image" winid="6"/>
+   <position x="-661" y="-501"/>
+   <parameters>
+    <parameter value="C:/Users/bigbo/OneDrive/Documents/cours_info_s4/M4104_TNI/tni/Images/dame_assise.png" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Gray Image Displayer" library="IO/release/display_gray_image" winid="5"/>
+   <position x="-494" y="-288"/>
+   <parameters>
+    <parameter value="image de base" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="HistoCumul" library="tp1/release/HistoCumul" winid="4"/>
+   <position x="-213" y="-287"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Gray Image Displayer" library="IO/release/display_gray_image" winid="3"/>
+   <position x="31" y="-536"/>
+   <parameters>
+    <parameter value="image egalisee locale" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Signal 32 bits displayer" library="IO/release/display_long_signal" winid="2"/>
+   <position x="329" y="-312"/>
+   <parameters>
+    <parameter value="histo cumul" paramid="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="EgaliseHistoLocal" library="tp3/EgaliseHistoLocal/release/EgaliseHistoLocal" winid="1"/>
+   <position x="-324" y="-494"/>
+   <parameters>
+    <parameter value="5" paramid="0"/>
+   </parameters>
+  </module>
+ </modules>
+ <links>
+  <link from_node="0" from="5" to_node="0" to="6"/>
+  <link from_node="0" from="4" to_node="0" to="1"/>
+  <link from_node="0" from="3" to_node="0" to="1"/>
+  <link from_node="0" from="2" to_node="0" to="4"/>
+  <link from_node="0" from="1" to_node="0" to="6"/>
+ </links>
+</workspace>

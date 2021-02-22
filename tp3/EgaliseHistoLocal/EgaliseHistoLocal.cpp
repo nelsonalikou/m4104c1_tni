@@ -1,4 +1,5 @@
 #include "EgaliseHistoLocal.hpp"
+#include <iostream>
 
 using namespace ns_wtni;
 
@@ -55,59 +56,61 @@ bool EgaliseHistoLocal::is_ready( std::string & msg )
 	return verifyParameters(msg, false);
 }
 
+
 bool EgaliseHistoLocal::execute( std::string &msg)
 {
-	//Tester les parametres
-	if ( !verifyParameters( msg, true ) ) 
-		return false;
+    //Tester les parametres
+    if ( !verifyParameters( msg, true ) )
+        return false;
 
-	// Tester les entrees - A COMPLETER si NECESSAIRE !
-	if ( ! input )
-	{
-		 msg = "L'entree n°1 n'est pas initialisee.";
-		return false;
-	}
+    // Tester les entrees - A COMPLETER si NECESSAIRE !
+    if ( ! input )
+    {
+         msg = "L'entree n°1 n'est pas initialisee.";
+        return false;
+    }
 
-	// ALLOUER les sorties ! TODO
-	// Ecrire le code du plugin : TODO !!
-    GrayImage &out = *output;
+    // ALLOUER les sorties ! TODO
+    unsigned int marge = windowsSize/2,
+            w = input->width(),
+            h = input->height();
+
+    output = new GrayImage(w, h);
 
     //histogramme cumulé croissant
+
     auto_ref<ns_wtni::e1::signal<long> > histo = new ns_wtni::e1::signal<long>(256);
-    const GrayImage &proxy = *input;
-    for (int line = 0; line < (int)proxy.height(); line++)
+
+    // Ecrire le code du plugin : TODO !!
+    for (unsigned int line = marge; line < input->height() - marge; line++)
     {
-        for (int colonne = 0; colonne < (int)input->width(); colonne++)
+        for(unsigned int column = marge; column < input->width() - marge; column++)
         {
-            if(colonne < windowsSize -1 || colonne >= input->width() - windowsSize -1 || line < windowsSize -1 || line >= input->height() - windowsSize -1){
-                out[line][colonne] = 0;
-            }else{
+            //int hc[256];
+            //memset(hc,0,256*sizeof(int));
+            for(unsigned int s=0;s <histo->size();s++){
+                (*histo)[s] = 0;
             }
-            int value = proxy[line][colonne];
-            (*histo)[value] += 1;
-        }
-    }
 
-    for(unsigned int i=1; i<histo->size() - windowsSize -1; i++)
-    {
-        for(unsigned int size = i; size < windowsSize; size++)
-        {
-            (*histo)[i] += (*histo)[i-1] + (*histo)[i];
-        }
-    }
-
-    //parcours de notre image
-    for (unsigned int colonne = 0; colonne < input->width(); colonne++) {
-            for (unsigned int ligne = 0; ligne < input->height(); ligne++) {
-                if(colonne < windowsSize -1 || colonne >= input->width() - windowsSize -1 || ligne < windowsSize -1 || ligne >= input->height() - windowsSize -1){
-                    out[ligne][colonne] = 0;
-                }else{
-                    int value = proxy[ligne][colonne];
-                    out[ligne][colonne] = (int) round(double(255) * (double)(*histo)[value] / double((*histo)[255]) ) ;
+            for (unsigned ll = line - marge; ll <= line + marge; ll++)
+            {
+                for(unsigned int cc = column - marge; cc <= column + marge; cc++)
+                {
+                    int pixel = (*input)[ll][cc];
+                    (*histo)[pixel]++;
                 }
             }
-        }
 
+            for(int i=1;i<256;i++){
+                (*histo)[i] += (*histo)[i-1];
+            }
+
+            //calcul de HC
+            int pixel = (*input)[line][column];
+            pixel = 255 * double((*histo)[pixel]) / double((*histo)[255]);
+            (*output)[line][column] = pixel;
+        }
+    }
     return true;
 }
 
