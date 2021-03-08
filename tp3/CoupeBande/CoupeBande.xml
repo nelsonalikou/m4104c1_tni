@@ -1,0 +1,126 @@
+<!DOCTYPE qTniML>
+<workspace subversion="1" version="2">
+ <modules>
+  <module>
+   <identification name="Signal double displayer" winid="16" library="IO/release/display_double_signal"/>
+   <position x="374.767" y="296.985"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Signal double displayer" winid="15" library="IO/release/display_double_signal"/>
+   <position x="316.784" y="196.576"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Module, Phase -> Complexe 1D" winid="13" library="Fourier/release/ModulePhase2Complex1D"/>
+   <position x="130.784" y="161.497"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="FFT Shift 1D" winid="12" library="Fourier/release/fftshift1d"/>
+   <position x="93.4386" y="327.581"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="Signal double displayer" winid="11" library="IO/release/display_double_signal"/>
+   <position x="167" y="-55"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Signal double displayer" winid="10" library="IO/release/display_double_signal"/>
+   <position x="407" y="-512"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="FFT Shift 1D" winid="9" library="Fourier/release/fftshift1d"/>
+   <position x="333.289" y="85.1056"/>
+   <parameters/>
+  </module>
+  <module>
+   <identification name="CoupeBande" winid="8" library="tp3/CoupeBande/release/CoupeBande"/>
+   <position x="-36.6786" y="-127.061"/>
+   <parameters>
+    <parameter paramid="0" value="630"/>
+    <parameter paramid="1" value="650"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Sinusoide" winid="7" library="tp3/Sinusoide/release/Sinusoide"/>
+   <position x="-414.655" y="-651.337"/>
+   <parameters>
+    <parameter paramid="0" value="0.0125"/>
+    <parameter paramid="1" value="0.125"/>
+    <parameter paramid="2" value="1024"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Signal double displayer" winid="6" library="IO/release/display_double_signal"/>
+   <position x="212" y="-651"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="DFT" winid="5" library="Fourier/release/dft1d"/>
+   <position x="-165" y="-507"/>
+   <parameters>
+    <parameter paramid="0" value="1"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="IDFT" winid="4" library="Fourier/release/idft1d"/>
+   <position x="222" y="-505"/>
+   <parameters>
+    <parameter paramid="0" value="1"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Complexe 1D -> Module, Phase" winid="3" library="Fourier/release/ComplexeToModulePhase1D"/>
+   <position x="89" y="-380"/>
+   <parameters>
+    <parameter paramid="0" value="0"/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Signal double displayer" winid="2" library="IO/release/display_double_signal"/>
+   <position x="631" y="-348"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+  <module>
+   <identification name="Signal double displayer" winid="1" library="IO/release/display_double_signal"/>
+   <position x="687" y="22"/>
+   <parameters>
+    <parameter paramid="0" value=""/>
+   </parameters>
+  </module>
+ </modules>
+ <links>
+  <link to_node="0" from_node="0" from="16" to="12"/>
+  <link to_node="0" from_node="0" from="15" to="13"/>
+  <link to_node="0" from_node="0" from="13" to="8"/>
+  <link to_node="0" from_node="1" from="13" to="8"/>
+  <link to_node="0" from_node="0" from="12" to="8"/>
+  <link to_node="0" from_node="0" from="11" to="8"/>
+  <link to_node="0" from_node="0" from="10" to="4"/>
+  <link to_node="0" from_node="0" from="9" to="3"/>
+  <link to_node="0" from_node="0" from="8" to="5"/>
+  <link to_node="0" from_node="0" from="6" to="7"/>
+  <link to_node="0" from_node="0" from="5" to="7"/>
+  <link to_node="0" from_node="0" from="4" to="5"/>
+  <link to_node="1" from_node="1" from="4" to="5"/>
+  <link to_node="0" from_node="0" from="3" to="5"/>
+  <link to_node="1" from_node="1" from="3" to="5"/>
+  <link to_node="0" from_node="0" from="2" to="3"/>
+  <link to_node="0" from_node="0" from="1" to="9"/>
+ </links>
+</workspace>
